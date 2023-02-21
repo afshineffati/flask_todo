@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<title>ToDo</title>
+<body>
+    <h1>Simply Do!</h1>
+    <button><a href="/">Home</a></button>
+
+    <p>
+        Title: {{ todo.Title }} <br>
+        Notes: {{ todo.Notes }}
+    </p>
+    <p>
+        <button>
+            <a href="{{ url_for('todo', index=index-1) }}">Previous</a>
+        </button>
+        <button>
+            <a href="{{ url_for('todo', index=index+1) }}">Next</a>
+        </button>
+    </p>
+
+
+</body>
+</html>
