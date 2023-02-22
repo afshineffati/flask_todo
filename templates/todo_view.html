@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Todo{% endblock %}
+
+{% block content %}
+    <button><a href="{{ url_for('remove_todo', index=index) }}">Remove</a></button>
+    <p>Here is something to do:</p>
+    <p>
+        Title: {{ todo.Title }} <br>
+        Notes: {{ todo.Notes }}
+    </p>
+    <p>
+        {% if index > 0 %}
+            <button>
+                <a href="{{ url_for('todo_view', index=index-1) }}">Previous</a>
+            </button>
+        {% endif %}
+        
+        {% if index < max_index %}
+            <button> 
+                <a href="{{ url_for('todo_view', index=index+1) }}">Next</a>
+            </button>
+        {% endif %}
+    </p>
+{% endblock %}

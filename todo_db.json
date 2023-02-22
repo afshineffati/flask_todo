@@ -1,15 +1,1 @@
-[
-    {
-      "Title": "Call Mom",
-      "Notes": ""
-    },
-    {
-      "Title": "Pay bills",
-      "Notes": "water and hydro"
-    },
-    {
-      "Title": "Dr appointment",
-      "Notes": "Saturday at noon"
-    }
-  ]
-  
+[{"Title": "Dr appointment", "Notes": "Saturday at noon"}, {"Title": "Call Mom", "Notes": "fix her laptop"}, {"Title": "pay bills", "Notes": "due Saturday"}, {"Title": "buy eggs", "Notes": ""}]

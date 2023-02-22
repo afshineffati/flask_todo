@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lamg="en">
+<head>
+    <meta charset='UTF-8'>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Simply Do!</h1>
+    <button><a href="{{ url_for('home') }}">Home</a></button>
+    <button><a href="{{ url_for('todos') }}">Task List</a></button>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

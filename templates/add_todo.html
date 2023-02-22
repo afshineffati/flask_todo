@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Add Task{% endblock %}
+
+{% block content %}
+    <p>Add a new ToDo</p>
+    <form method="post">
+        <p>
+            Title:
+            <input type="text" name="title">
+        </p>
+        <p>
+            Notes:
+            <input type="text" name="notes">
+        </p>
+        <button type="submit">Done</button>
+    </form>
+{% endblock %}

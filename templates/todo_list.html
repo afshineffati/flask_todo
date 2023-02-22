@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Task List{% endblock %}
+
+{% block content %}    
+    <button><a href="{{ url_for('add_todo') }}">Add</a></button>
+    <p>ToDo List</p>
+    <ul>
+        {% for todo in todos %}
+            <li>
+                <a href="{{ url_for('todo_view', index=loop.index0) }}">
+                    {{ todo.Title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul> 
+{% endblock %}

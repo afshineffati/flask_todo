@@ -1,13 +1,8 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html lang="en">
-<title>Simply Do!</title>
-<body>
-    <h1>Simply Do!</h1>
+{% block title %}Simply Do!{% endblock %}
 
-    <button><a href="/">Home</a></button>
-    <button><a href="/todo/0">Things ToDo</a></button>
-        
+{% block content %}     
     <p>
         World's best ToDo app
     </p>
@@ -15,7 +10,4 @@
         <img src="/static/check.png", 
             alt="checkmark", width="150", height="150">
     </p>
-
-</body>
-</html>
-
+{% endblock %}

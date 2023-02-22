@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Remove Task{% endblock %}
+
+{% block content %}
+    <p>Removing:</p>
+    <p>
+        Title: {{ todo.Title }} <br>
+        Notes: {{ todo.Notes }}
+    </p>
+
+    <p>Are you sure?</p>
+    <form method="post">
+        <button type="submit">Yes</button>
+    </form>
+{% endblock %}
